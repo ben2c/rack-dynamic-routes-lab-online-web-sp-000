@@ -8,11 +8,11 @@ class Application
 
     if req.path == "/songs"
       resq.write "You've request the songs"
-    else 
+    else
       resp.write "Route not found"
       resp.status = 404
     end
-    
+
     resp.finish
   end
 end
