@@ -3,7 +3,7 @@ class Application
   @@item = []
 
   def call(env)
-    resp = Rack:Response.new
+    resp = Rack::Response.new
     req = Rack::Request.new
 
     if req.path == "/songs"
